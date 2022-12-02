@@ -368,7 +368,7 @@ index 2a0fbf1..467c0c8 100644
 -      </svg>
 -    </a>
 +<div class="header">
-+  <h1>micro-header is wokring</h1>
++  <h1>{{title}} is wokring</h1>
  </div>
 -
 -<div class="content" role="main">
