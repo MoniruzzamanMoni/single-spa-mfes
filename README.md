@@ -79,4 +79,41 @@ Steps to test your Angular single-spa application:
 git apply patches/create-single-spa-ng-app.patch -p2 --directory=micro-navbar/
 ```
 
+## Update selector 'app-root' in app.component.ts, index.html and main.single-spa.ts files with unique name per mfe . Examples:
+### app.component.ts :
 
+```
+...
+@Component({
+  selector: 'header-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+...
+```
+
+### Index.html :
+
+```
+...
+<body>
+  <header-root></header-root>
+</body>
+</html>
+```
+### main.single-spa.ts:
+
+```
+...
+const lifecycles = singleSpaAngular({
+  bootstrapFunction: singleSpaProps => {
+    singleSpaPropsSubject.next(singleSpaProps);
+    return platformBrowserDynamic(getSingleSpaExtraProviders()).bootstrapModule(AppModule);
+  },
+  template: '<header-root />',
+  Router,
+  NavigationStart,
+  NgZone,
+});
+...
+```
