@@ -28,7 +28,7 @@ diff --git a/micro-header/src/app/app.component.css b/micro-header/src/app/app.c
 index e69de29..c6bc8e1 100644
 --- a/micro-header/src/app/app.component.css
 +++ b/micro-header/src/app/app.component.css
-@@ -0,0 +1,7 @@
+@@ -0,0 +1,8 @@
 +.header {
 +  width: 100%;
 +  background-color: rgb(200, 200, 200);
