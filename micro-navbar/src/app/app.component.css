@@ -1,0 +1,9 @@
+.title {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: #007dba;
+  border: 1px solid #000;
+  padding: 2%;
+  text-align: center;
+  margin: 0;
+}
