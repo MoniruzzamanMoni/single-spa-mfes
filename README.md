@@ -117,3 +117,17 @@ const lifecycles = singleSpaAngular({
 });
 ...
 ```
+
+# Update in app routing module
+```
+const routes: Routes = [
+  { path: '**', component: EmptyRouteComponent },
+];
+```
+
+```
+  providers: [
+    { provide: APP_BASE_HREF, useValue: '/' },
+  ],
+```
+
