@@ -1,9 +1,7 @@
-.demo-panel {
-  background: #f2f2f2;
-  overflow: hidden;
-  border: 1px solid rgb(179, 179, 179);
-  border-radius: 5px;
-  box-shadow: 0 0 20px 8px #d0d0d0;
-  text-align: center;
-  margin: 2px;
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+
