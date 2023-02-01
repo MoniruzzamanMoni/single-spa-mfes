@@ -12,12 +12,12 @@ npm start
 ```
 cd micro-header
 npm i
-npm run serve:single-spa:micro-header
+npm start
 ```
 # micro-navbar app run command
 
 ```
 cd micro-navbar
 npm i
-npm run serve:single-spa:micro-navbar
+npm start
 ```
